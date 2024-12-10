@@ -12,7 +12,7 @@ fn main() {
     env::set_var("RUST_BACKTRACE", "1");
     const DAY: &str = "day02";
 
-    let path = format!("./inputs/{}.txt", DAY); // relative path from where 'cargo run'
+    let path = format!("../inputs/{}.txt", DAY); // relative path from where 'cargo run'
     let input_string = &get_input_file(&path).unwrap();
     // let input = parse("1 2 7 8 9");
      let input = parse(&input_string);
