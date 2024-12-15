@@ -1,6 +1,3 @@
-use core::{num, panic};
-use std::borrow::Borrow;
-
 use regex::{Captures, Regex};
 
 type Input = Vec<[u32; 2]>; // Collection of two numbers to be multiplied. (Maybe redundant?)
@@ -31,7 +28,5 @@ pub fn parse(str: &str) -> Input {
 }
 
 pub fn part_01(input: &Input) -> u32 {
-    let mut sum = 0;
-    input.iter().for_each(|nums| sum += nums[0] * nums[1]);
-    sum
+    input.iter().fold(0, |sum, nums| sum + nums[0] * nums[1])
 }

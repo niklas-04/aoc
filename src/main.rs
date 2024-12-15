@@ -1,4 +1,4 @@
-use std::fs::{exists, read_to_string};
+use std::fs::read_to_string;
 use std::{env, error::Error};
 
 //use day01::{parse, part_01, part_02};
