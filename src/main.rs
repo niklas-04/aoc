@@ -7,7 +7,7 @@ use std::{env, error::Error};
 // use day02::{parse, part_01, part_02};
 // mod day02;
 
-use day03::{parse, part_01};
+use day03::{parse, part_01, part_02};
 mod day03;
 
 // TODO: Structure functions from different days cleaner
@@ -20,10 +20,10 @@ fn main() {
     let input = parse(&input_string);
 
     let solution_01 = part_01(&input);
-    //let solution_02 = part_02(&input);
-    //
+    let solution_02 = part_02(&input);
+
     println!("{}", solution_01);
-    //println!("{}", solution_02);
+    println!("{}", solution_02);
 }
 
 // Uses file path relative to where main.rs is located
